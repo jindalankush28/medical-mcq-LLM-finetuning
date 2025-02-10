@@ -1,0 +1,33 @@
+nohup: ignoring input
+[2025-02-06 19:10:49,193] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+W0206 19:10:54.206000 1321539 site-packages/torch/distributed/run.py:792] 
+W0206 19:10:54.206000 1321539 site-packages/torch/distributed/run.py:792] *****************************************
+W0206 19:10:54.206000 1321539 site-packages/torch/distributed/run.py:792] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W0206 19:10:54.206000 1321539 site-packages/torch/distributed/run.py:792] *****************************************
+
+Formatting prompts:   0%|          | 0/85096 [00:00<?, ? examples/s]
+Formatting prompts: 100%|██████████| 85096/85096 [00:05<00:00, 14203.95 examples/s]
+Formatting prompts: 100%|██████████| 21274/21274 [00:01<00:00, 14132.50 examples/s]
+Formatting prompts: 100%|██████████| 1472/1472 [00:00<00:00, 14152.18 examples/s]
+[2025-02-06 19:11:15,140] [INFO] [real_accelerator.py:222:get_accelerator] Setting ds_accelerator to cuda (auto detect)
+[2025-02-06 19:11:18,106] [INFO] [comm.py:652:init_distributed] cdb=None
+[2025-02-06 19:11:18,106] [INFO] [comm.py:683:init_distributed] Initializing TorchBackend in DeepSpeed with backend nccl
+`low_cpu_mem_usage` was None, now default to True since model is quantized.
+
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]
+Loading checkpoint shards: 100%|██████████| 4/4 [00:18<00:00,  4.57s/it]
+
+  0%|          | 1/1995 [00:04<2:19:59,  4.21s/it]
+ 33%|███▎      | 665/1995 [28:28<56:34,  2.55s/it]
+ {'loss': 1.5973, 'grad_norm': 0.3200525304010137, 'learning_rate': 0.00019889899766844816, 'epoch': 1.0}
+100%|██████████| 167/167 [02:06<00:00,  1.32it/s]
+{'eval_loss': 1.5294580459594727, 'eval_runtime': 127.191, 'eval_samples_per_second': 167.26, 'eval_steps_per_second': 1.313, 'epoch': 1.0}                                 
+ 67%|██████▋   | 1330/1995 [58:56<28:14,  2.55s/it]
+{'loss': 1.431, 'grad_norm': 0.3790754633887892, 'learning_rate': 9.258042342329481e-05, 'epoch': 2.0}
+100%|██████████| 167/167 [02:06<00:00,  1.32it/s]
+{'eval_loss': 1.4548547267913818, 'eval_runtime': 127.3984, 'eval_samples_per_second': 166.988, 'eval_steps_per_second': 1.311, 'epoch': 2.0}
+100%|██████████| 1995/1995 [1:29:24<00:00,  2.55s/it]                                        
+{'loss': 1.2272, 'grad_norm': 0.4764038891977179, 'learning_rate': 0.0, 'epoch': 3.0}
+100%|██████████| 167/167 [02:06<00:00,  1.32it/s]
+{'eval_loss': 1.4555740356445312, 'eval_runtime': 127.4897, 'eval_samples_per_second': 166.868, 'eval_steps_per_second': 1.31, 'epoch': 3.0}
+{'train_runtime': 5498.4586, 'train_samples_per_second': 46.429, 'train_steps_per_second': 0.363, 'train_loss': 1.4184976601660402, 'epoch': 3.0}
